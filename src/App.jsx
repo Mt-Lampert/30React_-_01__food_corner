@@ -15,6 +15,7 @@ function App(props) {
   return (
     <div className="App">
       <Navbar />
+      <div data-testid="vitest"></div>
       <Routes>
         <Route index element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>

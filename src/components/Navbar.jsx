@@ -44,7 +44,7 @@ function Navbar(props) {
       </div>
 
       <div ref={navbarMenu} className="navbar-menu">
-        <div className="navbar-end">
+        <div className="navbar-end" data-testid="navbar-end">
           {links.map((link) => {
             return (
               <div className="navbar-item" key={link.id}>
