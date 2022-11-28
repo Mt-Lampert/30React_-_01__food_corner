@@ -1,3 +1,6 @@
+## 2022-11-27 21:45
+
+I did some hard refreshing doing Bulma for the navigation bar. Worked quite well, only the hamburger menu did not quite follow the order of clicking. At times the hamburger turned into an X, at times not. Is it Bulma? Is it React? Is it me? I don't know.
 
 
 ## 2022-11-23: 23:51

@@ -10,6 +10,7 @@ nav.navbar .navbar-item > a:hover {
 
 .navbar-brand > figure {
   margin-top: 0.5em;
+  margin-left: .5em;
 }
 
 .navbar-end {

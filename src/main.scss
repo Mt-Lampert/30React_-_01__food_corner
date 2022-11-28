@@ -3,6 +3,8 @@
 // Import a Google Font
 // @import url('https://fonts.googleapis.com/css?family=Noto-Sans:400,700');
 
+$family-sans-serif: 'Noto Sans', 'Ubuntu', sans-serif;
+
 
 /*
 // Set your brand colors
@@ -13,7 +15,6 @@ $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
 // Update Bulma's global variables
-$family-sans-serif: 'Nunito', sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $link: hsl(0, 0%, 96%);

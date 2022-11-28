@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar(props) {
   const links = ["Menu", "Home", "Contact", "About"];
-
+  const navbarMenu = useRef();
   
   function burgerHandler() {
-    const navbarMenu = document.getElementById('navbarMenu')
-    navbarMenu.classList.toggle("is-active")
+    navbarMenu.current.classList.toggle("is-active")
   }
 
   return (
@@ -21,7 +20,7 @@ function Navbar(props) {
       <div className="navbar-brand">
         <figure className="image is-48x48">
           <img src={logo} width="48" alt="The Logo" />
-        </figure>
+        </figure>https://filejoker.net/file/84qvi7ingu6h
         <a
           role="button"
           className="navbar-burger"
@@ -36,7 +35,7 @@ function Navbar(props) {
         </a>
       </div>
 
-      <div id="navbarMenu" className="navbar-menu" >
+      <div ref={navbarMenu} className="navbar-menu" >
         <div className="navbar-end">
           {links.map((link) => {
             return (
