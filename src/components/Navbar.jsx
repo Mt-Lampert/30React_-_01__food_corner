@@ -4,11 +4,17 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar(props) {
-  const links = ["Menu", "Home", "Contact", "About"];
+  // const links = ["Menu", "Home", "Contact", "About"];
+  const links = [
+    { id: "1", name: "Home", link: "/" },
+    { id: "2", name: "Menus", link: "/menus" },
+    { id: "3", name: "About", link: "/about" },
+    { id: "4", name: "Contact", link: "/contact" },
+  ];
   const navbarMenu = useRef();
-  
+
   function burgerHandler() {
-    navbarMenu.current.classList.toggle("is-active")
+    navbarMenu.current.classList.toggle("is-active");
   }
 
   return (
@@ -19,8 +25,10 @@ function Navbar(props) {
     >
       <div className="navbar-brand">
         <figure className="image is-48x48">
-          <img src={logo} width="48" alt="The Logo" />
-        </figure>https://filejoker.net/file/84qvi7ingu6h
+          <Link to="/">
+            <img src={logo} width="48" alt="The Logo" />
+          </Link>
+        </figure>
         <a
           role="button"
           className="navbar-burger"
@@ -35,12 +43,12 @@ function Navbar(props) {
         </a>
       </div>
 
-      <div ref={navbarMenu} className="navbar-menu" >
+      <div ref={navbarMenu} className="navbar-menu">
         <div className="navbar-end">
           {links.map((link) => {
             return (
-              <div className="navbar-item" key={link}>
-                <Link to="#">{link}</Link>
+              <div className="navbar-item" key={link.id}>
+                <Link to={link.link}>{link.name}</Link>
               </div>
             );
           })}
