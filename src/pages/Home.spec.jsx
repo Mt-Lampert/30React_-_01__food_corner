@@ -1,4 +1,5 @@
-import { describe, expect, render, screen } from "vitest"
+import { describe, expect} from "vitest"
+import { render, screen } from '@testing-library/react';
 import Home from "./Home"
 
 describe("Home", () => {
@@ -7,12 +8,12 @@ describe("Home", () => {
   })
 
   it("has a home container", () => {
-    const homeContainer = screen.getByTestID("home-container")
+    const homeContainer = screen.getByTestId("home-container")
     expect(homeContainer).toBeInTheDocument();
   })
 
-  it("hase home header", () => {
-    const homeHeader = screen.getByTestID("home-headder")
+  it("has a header container", () => {
+    const homeHeader = screen.getByTestId("home-hero")
     expect(homeHeader).toBeInTheDocument();
   })
 })
