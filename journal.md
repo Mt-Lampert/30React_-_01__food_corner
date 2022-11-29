@@ -1,3 +1,9 @@
+## 2022-11-29 21:30
+
+Finished the Home page with a lot of things that were new: MUI icons and a lot of things I had
+to fix on the design front. But it was worth it.
+
+
 ## 2022-11-28 20:30
 
 Re-running the previous tests gave me an unpleasant error notice:
@@ -23,6 +29,7 @@ describe("App", () => {
   })
 })
 ```
+
 
 
 ## 2022-11-28 09:25

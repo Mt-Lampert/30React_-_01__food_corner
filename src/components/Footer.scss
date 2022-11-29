@@ -1,0 +1,18 @@
+.footer {
+  .social-media {
+    p {
+      text-align: center;
+    }
+    svg {
+      font-size: 3em;
+      width: 1.5em;
+      color: #fff;
+    }
+
+    @media screen and (min-width: 800px) {
+      svg {
+        width: 2em;
+      }
+    }
+  }
+}
