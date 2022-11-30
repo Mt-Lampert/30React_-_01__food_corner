@@ -18,7 +18,7 @@ export const menuList = [
   },
   {
     name: "Butter Paneer",
-    imageparams: Paneer,
+    image: Paneer,
     price: "19,99",
   },
   {

@@ -1,8 +1,10 @@
+## 2022-11-30 11:45
+
+I made it! the menu list page looks fantastic!
+
 ## 2022-11-30 10:20
 
 Just finished with items 1-4 in the list. I really like the result. Now new planning is necessary for designing the grid of the Menu container inside `Menu.jsx`.
-
-
 
 
 ## 2022-11-30 08:00
