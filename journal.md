@@ -1,3 +1,21 @@
+## 2022-11-30 10:20
+
+Just finished with items 1-4 in the list. I really like the result. Now new planning is necessary for designing the grid of the Menu container inside `Menu.jsx`.
+
+
+
+
+## 2022-11-30 08:00
+
+For the menu page some planning and coordination is needed. So this is how I'm going to do it:
+
+1. Do the containers for the list component `Menus.jsx`.
+2. Import the data from `helpers/data.js`.
+3. Build a wrapper card component for a list item. The necessary data will be passed using props.
+4. Display __one single__ card inside the list for finetuning its design.
+5. loop through the complete list of meals.
+
+
 ## 2022-11-29 21:30
 
 Finished the Home page with a lot of things that were new: MUI icons and a lot of things I had
