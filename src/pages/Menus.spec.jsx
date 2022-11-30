@@ -17,5 +17,10 @@ describe("Menus Page", () => {
     expect(menuContainer).toBeInTheDocument();
   });
 
-  it.skip("has a number of menu items");
+  it("has a number of menu items", () => {
+    const menuItems = screen.getAllByTestId("mi-container");
+    expect(menuItems.length).toBe(6);
+    const masalaDosa = screen.getByRole("heading", { name: "Masala Dosa" });
+    expect(masalaDosa).toBeInTheDocument();
+  });
 });
