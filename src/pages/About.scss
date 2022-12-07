@@ -1,0 +1,19 @@
+.about-page {
+  .top {
+    background-image: url("../assets/masala.jpg");
+    background-position-y: -40%;
+    background-position-x: center;
+
+    @media screen and (min-width: 800px) {
+      background-position: top left;
+    }
+  }
+
+  .bottom {
+    // width: 70%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
