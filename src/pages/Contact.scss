@@ -1,0 +1,20 @@
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 800) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  > .left-side {
+    background-image: url("../assets/photo.jpeg");
+    min-height: 30vh;
+    background-position-x: center;
+    background-position-y: 60%;
+  }
+
+  .form-bottom {
+    text-align: center;
+  }
+}
